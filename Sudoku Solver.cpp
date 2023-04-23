@@ -20,6 +20,8 @@ bool isSafe(int board[9][9], int row, int col, int value)
     return true;
 }
 
+//to check inner grid -> board[3*((row/3)+i/3][3*(col/3)+i%3] ,this is the formula ! 
+
 bool solveSudoku(int board[N][N])
 {
     for (int i = 0; i < N; i++)
